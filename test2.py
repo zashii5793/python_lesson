@@ -1,6 +1,5 @@
 import tkinter as tk
+import tkinter.filedialog as tkfd
 
 root = tk.Tk()
-root.geometry("350×100")
-
-root.mainloop()
+root.withdraw()
