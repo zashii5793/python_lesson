@@ -12,7 +12,7 @@ for page in range(1, 3):
 
     #歌詞一覧ページ
     
-    url = 'https://www.uta-net.com/artist/134/' + str(page) + '/'
+    url = 'https://www.uta-net.com/artist/134/0' + str(page) + '/'
     response = requests.get(url)
     soup = BeautifulSoup(response.text, 'lxml')
     links = soup.find_all('td', class_='side td1')
