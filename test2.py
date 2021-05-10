@@ -12,6 +12,7 @@ def calc_bmi():
     s = "肥満 {0}% (bmi={1})".format(per, bmi)
     labelResult['text'] = s
 
+
 # ウィンドウを作成 --- (*2)
 win = tk.Tk()
 win.title("肥満判定")
@@ -34,6 +35,9 @@ textWeight.pack()
 
 labelResult = tk.Label(win, text=u'---')
 labelResult.pack()
+
+labeltest = tk.Label(win, text=u'test')
+labeltest.pack()
 
 calcButton = tk.Button(win, text=u'計算')
 calcButton["command"] = calc_bmi
