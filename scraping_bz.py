@@ -1,4 +1,8 @@
 #import先が見つからないエラーが発生
+import sys
+sys.path.append(/Users/user/opt/anaconda3/lib/python3.8/site-packages (2.24.0))
+
+from . import library
 import requests
 from bs4 import BeautifulSoup
 import pandas as pd
@@ -8,6 +12,7 @@ import time
 list_df = pd.DataFrame(columns=['歌詞'])
 
 for page in range(1, 3):
+    ｓ
     #曲ページ先頭アドレス
     base_url = 'https://www.uta-net.com'
 
