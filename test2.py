@@ -43,5 +43,12 @@ calcButton = tk.Button(win, text=u'計算')
 calcButton["command"] = calc_bmi
 calcButton.pack()
 
+calcButton = tk.Button(win, text=u'Go')
+calcButton["command"] = calc_go
+calcButton.pack()
+
+def calc_go():
+
+
 # ウィンドウを動かす
 win.mainloop()
