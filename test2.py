@@ -49,6 +49,12 @@ calcButton.pack()
 
 def calc_go():
 
+n = 1
+total = 0
+while n <= 100:
+  total += n
+total  
+labelResult['text'] = total
 
 # ウィンドウを動かす
 win.mainloop()
