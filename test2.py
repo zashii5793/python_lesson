@@ -13,6 +13,13 @@ def calc_bmi():
     labelResult['text'] = s
 
 
+def calc_go():
+    i = 1
+    total = 0
+    while i <= 100:
+        total += i
+    labelResult['text'] = total
+
 # ウィンドウを作成 --- (*2)
 win = tk.Tk()
 win.title("肥満判定")
@@ -43,18 +50,9 @@ calcButton = tk.Button(win, text=u'計算')
 calcButton["command"] = calc_bmi
 calcButton.pack()
 
-calcButton = tk.Button(win, text=u'Go')
-calcButton["command"] = calc_go
-calcButton.pack()
-
-def calc_go():
-
-n = 1
-total = 0
-while n <= 100:
-  total += n
-total  
-labelResult['text'] = total
+testButton = tk.Button(win, text=u'Go')
+testButton["command"] = calc_go
+testButton.pack()
 
 # ウィンドウを動かす
 win.mainloop()
