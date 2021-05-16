@@ -1,4 +1,5 @@
 import tkinter as tk
+import sys
 
 # ボタンを押したときの処理 --- (*1)
 def calc_bmi():
