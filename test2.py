@@ -21,6 +21,13 @@ def calc_go():
         total += i
     labelResult['text'] = total
 
+def sum_num():
+    sum{range(1,101)}
+
+def sum_num2():
+    sum{i for i in range(1, 1001)
+    if i % 7 == 0 or i % 13 == 0}
+
 # ウィンドウを作成 --- (*2)
 win = tk.Tk()
 win.title("肥満判定")
