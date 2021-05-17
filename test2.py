@@ -15,18 +15,8 @@ def calc_bmi():
 
 
 def calc_go():
-    i = 1
-    total = 0
-    while i <= 100:
-        total += i
-    labelResult['text'] = total
 
-def sum_num():
-    sum{range(1,101)}
-
-def sum_num2():
-    sum{i for i in range(1, 1001)
-    if i % 7 == 0 or i % 13 == 0}
+    labelResult['text'] = sum(range(1,101))
 
 # ウィンドウを作成 --- (*2)
 win = tk.Tk()
