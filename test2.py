@@ -19,7 +19,7 @@ def calc_go():
     labelResult['text'] = sum(range(1,101))
 
 def calc_num():
-    sum(i for i in range(1,1001)
+    labelResult['text']　= sum(i for i in range(1,1001)
     if i % 7 == 0 or i % 13 == 0)
 
 # ウィンドウを作成 --- (*2)
