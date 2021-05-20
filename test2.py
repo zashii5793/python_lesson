@@ -22,6 +22,13 @@ def calc_num():
     labelResult['text']　= sum(i for i in range(1,1001)
     if i % 7 == 0 or i % 13 == 0)
 
+lst = [1,9,19,5,7]
+for elem in lst:
+    if elem % 2 == 0:
+        print{'{}は素敵です'.format(elem)}
+        break
+else:    
+
 # ウィンドウを作成 --- (*2)
 win = tk.Tk()
 win.title("肥満判定")
