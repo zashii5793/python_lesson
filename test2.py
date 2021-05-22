@@ -24,7 +24,7 @@ def calc_num():
 
 lst = [1,9,19,5,7]
 for elem in lst:
-    if elem % 2 == 0:
+    if elem % 3 == 0:
         print{'{}は素敵です'.format(elem)}
         break
 else:    
