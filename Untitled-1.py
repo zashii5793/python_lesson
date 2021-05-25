@@ -12,10 +12,14 @@ def fib2(n):
     n0, n1 = n1, n0 + n1
   return n1
 
+def func():
+    print('Hello')
+
 print('call fib1')
 for x in range(10):
   print(f'{fib1(x)}, ', end='')
 print()
+
 print('call fib2')
 for x in range(10):
   print(f'{fib2(x)}, ', end='')
