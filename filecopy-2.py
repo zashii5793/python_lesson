@@ -12,4 +12,11 @@ if 0 > x:
 
 print('a' in 'abc')
 
+invoice_sheet_name = '請求書'
+wb = openpyxl.load_workbook(filter)
+
+corporate_name_cell = 'B2'
+
+str_list = ['a','b','c']
+
 
