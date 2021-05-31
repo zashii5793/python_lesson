@@ -1,4 +1,5 @@
 import tkinter as tk
+import numpy as np
 import sys
 
 # ボタンを押したときの処理 --- (*1)
@@ -17,17 +18,7 @@ def calc_bmi():
 def calc_go():
 
     labelResult['text'] = sum(range(1,101))
-
-def calc_num():
-    labelResult['text'] = sum(i for i in range(1,1001)
-    if i % 7 == 0 or i % 13 == 0)
-
-lst = [1,9,19,5,7]
-for elem in lst:
-    if elem % 3 == 0:
-        print['{}は素敵です'.format(elem)]
-        break
-else:    
+  
 
 # ウィンドウを作成 --- (*2)
 win = tk.Tk()
@@ -65,3 +56,7 @@ testButton.pack()
 
 # ウィンドウを動かす
 win.mainloop()
+
+n = 0
+for i in range(10):
+    print(i)
