@@ -1,13 +1,10 @@
 import numpy as np
-from matplotlib import pyplot as plt
+import matplotlib.pyplot as plt
+import pandas as pd
+import random
+%matplotlib inline
+import seaborn as sns
 
-ys = 200 + np.random.randn(100)
-x = [x for x in range(len(ys))]
-
-plt.plot(x, ys, '-')
-plt.fill_between(x, ys, 195, where=(ys > 195), facecolor='g', alpha=0.6)
-
-plt.thetagrids
-
-plt.title("Sample Visualization")
-plt.show()
+import requests
+import json
+import re
