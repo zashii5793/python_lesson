@@ -58,5 +58,5 @@ testButton.pack()
 win.mainloop()
 
 n = 0
-for i in range(20):
+for i in range(21):
     print(i)
