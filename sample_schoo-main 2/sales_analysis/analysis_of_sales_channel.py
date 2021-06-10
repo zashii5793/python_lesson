@@ -1,5 +1,4 @@
 import os
-
 import pandas as pd
 
 # Windows の方は
