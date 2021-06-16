@@ -17,3 +17,9 @@ for sheet in wb:
     for row in sheet:
         for cell in row:
             print(cell.value)
+
+class AddressBook:
+    person_list = []
+    def add(self.person):
+        self.person_list.append(person)
+        
