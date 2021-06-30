@@ -44,3 +44,11 @@ print(sales_by_channel)
 with pd.ExcelWriter('summary.xlsx') as writer:
     sales_summary.to_excel(writer, sheet_name='売上サマリー')
     sales_by_channel.to_excel(writer, sheet_name='流入元ごとの売上')
+
+target_symbol = 'Gold'
+start = '2019-1-1'
+end = '2019-12-31'
+
+if __name__=='__main__' :
+  plot_chart( df_data ,target_symbol ,start ,end )
+  
