@@ -51,4 +51,49 @@ end = '2019-12-31'
 
 if __name__=='__main__' :
   plot_chart( df_data ,target_symbol ,start ,end )
-  
+
+
+start_date = '2007-1-1'
+dict_target_symbols = {
+                       ##
+                       # 市場：何を買い、何を売るか
+                       #
+
+                       # 為替
+                        'j6.f':'Japanese Yen'      # 日本円
+                       ,'e6.f':'Euro'              # ユーロ
+                       ,'b6.f':'British Pound'     # 英ポンド
+                       ,'s6.f':'Swiss Franc'       # スイスフラン
+                       ,'d6.f':'Canadian Dollar'   # カナダドル
+                       ,'a6.f':'Austrarian Dollar' # 豪ドル
+                       ,'m6.f':'Mexican Peso'      # メキシコペソ
+                       # 貴金属
+                       ,'gc.f':'Gold'              # 金
+                       ,'si.f':'Silver'            # 銀
+                       ,'hg.f':'High Grade Copper' # 銅
+                       # 燃料
+                       ,'cl.f':'Crude Oil'         # WTI原油
+                       ,'ho.f':'ULSD NY Harbor'    # 灯油 ULSD
+                       ,'rb.f':'Gasoline RBOB'     # 無鉛ガソリン
+                       ,'ng.f':'Nature Gas'        # 天然ガス
+                       # 農畜産物
+                       ,'zc.f':'Corn'              # とうもろこし
+                       ,'zs.f':'Soybean'           # 大豆
+                       ,'zw.f':'Wheat'             # 小麦
+                       ,'sb.f':'Sugar'             # 砂糖
+                       ,'ct.f':'Cotton'            # 綿
+                       ,'cc.f':'Cocoa'             # ココア
+                       ,'kc.f':'Coffee'            # コーヒー
+                       ,'gf.f':'Feeder Cattle'     # 飼養牛
+                       ,'le.f':'Live Cattle'       # 牛
+                       ,'lh.f':'Lean Hogs'         # 豚
+                       # 債権・金利
+                       ,'ge.f':'Eurodollar'        # ユーロドル金利先物
+                       ,'zf.f':'5 Year T Note'     # 財務省中期債権
+                       ,'zn.f':'10 Year T Note'    # 同長期債権
+                       # 全27銘柄
+                       }                  
+
+if __name__=='__main__' :
+  df_data = set_price_data( start_date ,dict_target_symbols )
+    
