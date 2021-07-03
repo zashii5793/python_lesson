@@ -96,4 +96,12 @@ dict_target_symbols = {
 
 if __name__=='__main__' :
   df_data = set_price_data( start_date ,dict_target_symbols )
-    
+
+target_symbol = 'Gold'
+start = '2019-1-1'
+end = '2019-12-31'
+
+if __name__=='__main__' :
+  plot_chart( df_data ,target_symbol ,start ,end )
+  
+  
